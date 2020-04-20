@@ -1,0 +1,17 @@
+config OPPO_KEY_HANDLE
+	bool "config oppo key handle"
+	help
+		define key handle functions
+
+
+config OPPO_FORCE_DUMP
+	bool "config oppo force dump"
+	depends on OPPO_KEY_HANDLE
+	help
+		define force dump functions
+
+config OPPO_FORCE_TPLG
+	bool "config oppo force tp log"
+	depends on OPPO_KEY_HANDLE
+	help
+		define force tp log functions
